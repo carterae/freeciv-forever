@@ -16,7 +16,3 @@ Freeciv.net is a rich web application, which consists of the following component
     * MySQL database and Amazon S3 Simple Storage Service for storage. The MySQL database handles the user-database, forum and wiki, while savegames are stored using Amazon S3. 
 
 http://www.pvv.ntnu.no/~andrearo/freeciv-system-architecture.png
-
-==Proposed New System Architecture==
-
-http://www.pvv.ntnu.no/~andrearo/new-freeciv-system-architecture.png
