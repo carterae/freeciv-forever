@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
 #labels html5,web,workers
-
 = Introduction =
 
 Add your content here.
