@@ -39,7 +39,8 @@ particular feature of Freeciv, and therefore a quick-fix solution has been patch
 ||freeciv-svn-webclient-changes.diff||Add support for compressed delta protocol to Freeciv-proxy. Make tileset .spec files compatible with Python ConfigParser used by /freeciv-img-extract.||Patch removed delta protocol compression, and makes it possible for freeciv-img-extract to read the Freeciv tileset .spec files. Patch also removed a data field from a network packet which isn't supported yet.||
 ||metapatch1.diff||Adds meta_topic_string to metaserver||Adds meta_topic_string to metaserver||     
 ||turnchange.diff||Add support for integers in other formats than UINT32||Makes many integer data fields UINT32||
-||goto_1.diff||Implement client-side goto in Javascript||This patch adds server-side goto to the patched Freeeciv server.||                        ||noquitidle.diff||Not sure||This patch prevents auto-saving when all players disconnect||
+||goto_1.diff||Implement client-side goto in Javascript||This patch adds server-side goto to the patched Freeeciv server.||
+||noquitidle.diff||Not sure||This patch prevents auto-saving when all players disconnect||
 ||unit_dif.diff||Web client doesn't support "?unit:Workers" unit names.||Removes ?unit:Workers from ruleset.||
 ||goto_attack1.diff||Not sure||This patch makes a unit attack as a result of a goto.||
 ||no_rivers.diff||Add support for rendering rivers||This patch removed rivers from the map generator||
