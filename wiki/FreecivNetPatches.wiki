@@ -14,7 +14,9 @@ Freeciv.org SVN trunk, but represent some change which was required
 to make the Freeciv.net web client work. This means that these patches
 represent a change to Freeciv, which might have to be done in a better way. Most of
 the patches are created because the Freeciv.net web client doesn't support a 
-particular feature of Freeciv, and therefore a quick-fix solution has been patched in until this has been properly implemented in the Freeciv.net web client.
+particular feature of Freeciv, and therefore a quick-fix solution has been patched in until this has been properly implemented in the Freeciv.net web client. This means that removing most of these diffs would
+involve implementing the corresponding functionality in the Freeciv.net
+web client.
 
 
 = Details =
