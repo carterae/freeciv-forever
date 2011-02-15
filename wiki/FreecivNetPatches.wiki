@@ -41,7 +41,7 @@ particular feature of Freeciv, and therefore a quick-fix solution has been patch
 ||turnchange.diff||Add support for integers in other formats than UINT32||Makes many integer data fields UINT32||
 ||goto_1.diff||Implement client-side goto in Javascript||This patch adds server-side goto to the patched Freeeciv server.||
 ||noquitidle.diff||Not sure||This patch prevents auto-saving when all players disconnect||
-||unit_dif.diff||Web client doesn't support "?unit:Workers" unit names.||Removes ?unit:Workers from ruleset.||
+||unit_dif.diff||Web client doesn't support "?unit:Workers" unit names.||Changes ?unit:Workers in ruleset.||
 ||goto_attack1.diff||Not sure||This patch makes a unit attack as a result of a goto.||
 ||no_rivers.diff||Add support for rendering rivers||This patch removed rivers from the map generator||
 ||unithand-change2.diff||Add support for F3 shortcut in Freeciv.net web client||The Freeciv.net web client doesn't support a F3 shortcut to open players dialog||
