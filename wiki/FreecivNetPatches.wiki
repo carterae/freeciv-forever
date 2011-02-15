@@ -18,6 +18,14 @@ particular feature of Freeciv, and therefore a quick-fix solution has been patch
 involve implementing the corresponding functionality in the Freeciv.net
 web client.
 
+= Code-sharing between Freeciv.net and Freeciv.org =
+This is a Todo-list of the work involved with merging Freeciv.net and Freeciv.org:
+ # Update Freeciv.net to Freeciv.org trunk.
+ # Add support for all datatypes and packets to Freeciv-proxy.
+ # Add support for client-side Goto in Javascript.
+ # Create a savegame-system which will work in a distributed environment.
+ # Add support for rendering all tiles in Freeciv.net web client (arctic coastlines, lakes, rivers, etc).
+ # Fix the remaining minor patches which are not mentioned above.
 
 = Details =
 || *Patch filename* || *Proposed improvement to Freeciv.org or Freeciv.net* || *Description of patch* ||
