@@ -40,11 +40,11 @@ particular feature of Freeciv, and therefore a quick-fix solution has been patch
 ||metapatch1.diff||Adds meta_topic_string to metaserver||Adds meta_topic_string to metaserver||     
 ||turnchange.diff||Add support for integers in other formats than UINT32||Makes many integer data fields UINT32||
 ||goto_1.diff||Implement client-side goto in Javascript||This patch adds server-side goto to the patched Freeeciv server.||
-||noquitidle.diff||Not sure||This patch prevents auto-saving when all players disconnect||
+||noquitidle.diff||Make autosaving more configurable.||This patch prevents auto-saving when all players disconnect||
 ||unit_dif.diff||Web client doesn't support "?unit:Workers" unit names.||Changes ?unit:Workers in ruleset.||
-||goto_attack1.diff||Not sure||This patch makes a unit attack as a result of a goto.||
+||goto_attack1.diff||Implement client-side goto in Freeciv web client.||This patch makes a unit attack as a result of a goto.||
 ||no_rivers.diff||Add support for rendering rivers||This patch removed rivers from the map generator||
 ||unithand-change2.diff||Add support for F3 shortcut in Freeciv.net web client||The Freeciv.net web client doesn't support a F3 shortcut to open players dialog||
-||goto_change2.diff||Not sure||Removes excessive "The unit can't go there." error messages during gotos||
+||goto_change2.diff||Implement client-side goto in Javascript.||Removes excessive "The unit can't go there." error messages during gotos||
 ||nosave.diff||Make auto-saving more configurable||Removes auto-saving on some events||
 ||unithand_changes.diff||Add support for naming cities to Freeciv.net web client. This is difficult because of city names encoding over JSON||Auto-name cities in Freeciv.net web client||
