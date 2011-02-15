@@ -1,0 +1,32 @@
+#summary Documentation of Freeciv -> Freeciv.net Diffs
+#labels freeciv,patches
+
+= Documentation of Freeciv -> Freeciv.net Patches =
+
+The patches against Freeciv.org for Freeciv.net can be found here: 
+[https://github.com/freecivnet/freeciv-web/tree/master/freeciv/patches]
+
+The /freeciv directory is a fork of Freeciv.org trunk from 2009-10-18.
+Patches should be applied in the order they were created.
+
+Note that these patches are not intended to be committed directly to 
+Freeciv.org SVN trunk, but represent some change which was required
+to make the Freeciv.net web client work. This means that these patches
+represent a change to Freeciv, which might have to be done in a better way.
+
+
+= Details =
+|| *Patch filename* || *Descrition* ||
+||arctic-bugfix.diff||Makes arctic tiles get tundra graphics. This is a quick-fix because the web client don't support rendering the cell-based matching of arctic coastlines. This should be possible to implement, but not done yet.||
+||goto_fix_1.diff||Bugfix on server-side goto in Freeciv web client. This patch resets the goto and AI control of the unit. This patch was created because it fixes a problem where units would suddenly get new orders assigned by the AI after a goto. ||
+
+       orders_aborted.diff
+city_fixes.diff                     goto_fix_2.diff       orders_invalid2.diff
+citytools_changes.diff              govt-fix.diff         README
+client-fixes.diff                   lake-fix.diff         savegame-support.diff
+current_research_cost.diff          map_size_change.diff  text_fixes.diff
+diplchanges.diff                    metachange.diff       tileset_hack.diff
+freeciv-svn-webclient-changes.diff  metapatch1.diff       turnchange.diff
+goto_1.diff                         noquitidle.diff       unit_dif.diff
+goto_attack1.diff                   no_rivers.diff        unithand-change2.diff
+goto_change2.diff                   nosave.diff           unithand_changes.diff
