@@ -36,7 +36,7 @@ particular feature of Freeciv, and therefore a quick-fix solution has been patch
 ||diplchanges.diff||Add support for SINT16 to Freeciv-proxy||Freeciv proxy doesn't support SINT16, so everything must be UNIT32 for now||
 ||metachange.diff||Increases metaserver refresh rate||Increases metaserver refresh rate||
 ||tileset_hack.diff||Add full support for reading tileset match-style, sprite_type and match_indices to Freeciv web client.||This is a cludge to export some tileset matching information from the C client to Javascript code, because reading tilesets isn't supported in web client.||
-||freeciv-svn-webclient-changes.diff||Add support for compressed delta protocol to Freeciv-proxy. Make tileset .spec files compatible with Python ConfigParser used by /freeciv-img-extract.||Patch removed delta protocol compression, and makes it possible for freeciv-img-extract to read the Freeciv tileset .spec files. Patch also removed a data field from a network packet which isn't supported yet.||
+||freeciv-svn-webclient-changes.diff||Add support for compressed delta protocol to Freeciv-proxy. Make tileset .spec files compatible with Python Configparser used by /freeciv-img-extract.||Patch removed delta protocol compression, and makes it possible for freeciv-img-extract to read the Freeciv tileset .spec files. Patch also removed a data field from a network packet which isn't supported yet.||
 ||metapatch1.diff||Adds meta_topic_string to metaserver||Adds meta_topic_string to metaserver||     
 ||turnchange.diff||Add support for integers in other formats than UINT32||Makes many integer data fields UINT32||
 ||goto_1.diff||Implement client-side goto in Javascript||This patch adds server-side goto to the patched Freeeciv server.||
