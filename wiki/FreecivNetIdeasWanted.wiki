@@ -1,0 +1,12 @@
+#summary How can Freeciv.net become better?
+#labels freeciv,wishlist,contribution
+
+= Do you have any good ideas for Freeciv.net? =
+
+*We want to make Freeciv.net better and more fun to play for our users.
+Do you have any good ideas about what could be improved in Freeciv.net? What would you like to see in the new Freeciv.net?*
+
+* If you have any great ideas for Freeciv.net, then please submit your suggestions in the comments field below! *
+
+
+[http://www.freeciv.net/ http://games.freeciv.net/images/freeciv-screenshot-k.png]
