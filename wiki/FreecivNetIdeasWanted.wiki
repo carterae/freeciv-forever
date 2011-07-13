@@ -9,7 +9,3 @@ Do you have any good ideas about what could be improved in Freeciv.net? What wou
 *Freeciv.net is an open-source turn-based strategy game. It’s built entirely in HTML5 and features in-depth game-play and a wide variety of game modes and options. Your goal is to build cities, collect resources, organize your government, and build an army, with the ultimate goal of creating the best civilization. Freeciv.net uses the HTML5 Canvas element to render the graphics and optionally HTML5 Websockets for faster network transfers.*
 
 *If you have any great ideas for Freeciv.net, then please submit your suggestions in the comments field below!*
-
-
-[http://www.freeciv.net/ http://games.freeciv.net/images/freeciv-screenshot-k.png]
-This is a screenshot of the latest version of Freeciv.net.
