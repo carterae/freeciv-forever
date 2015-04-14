@@ -1,0 +1,58 @@
+# Documentation of Freeciv -> Freeciv.net Patches #
+
+The patches against Freeciv.org for Freeciv.net can be found here:
+https://github.com/freecivnet/freeciv-web/tree/master/freeciv/patches
+
+The /freeciv directory is a fork of Freeciv.org trunk from 2009-10-18.
+Patches should be applied in the order they were created.
+
+Note that these patches are not intended to be committed directly to
+Freeciv.org SVN trunk, but represent some change which was required
+to make the Freeciv.net web client work. This means that these patches
+represent a change to Freeciv, which might have to be done in a better way. Most of
+the patches are created because the Freeciv.net web client doesn't support a
+particular feature of Freeciv, and therefore a quick-fix solution has been patched in until this has been properly implemented in the Freeciv.net web client. This means that removing most of these diffs would
+involve implementing the corresponding functionality in the Freeciv.net
+web client.
+
+# Code-sharing between Freeciv.net and Freeciv.org #
+This is a Todo-list of the work involved with merging Freeciv.net and Freeciv.org:
+  1. Update Freeciv.net to Freeciv.org trunk.
+  1. Add support for all datatypes and packets to Freeciv-proxy.
+  1. Add support for client-side Goto in Javascript.
+  1. Create a savegame-system which will work in a distributed environment.
+  1. Add support for rendering all tiles in Freeciv.net web client (arctic coastlines, lakes, rivers, etc).
+  1. Fix the remaining minor patches which are not mentioned above.
+
+# Details #
+| **Patch filename** | **Proposed improvement to Freeciv.org or Freeciv.net** | **Description of patch** |
+|:-------------------|:-------------------------------------------------------|:-------------------------|
+|arctic-bugfix.diff|Implement cell-based coastlines for webclient|Makes arctic tiles get tundra graphics. This is a quick-fix because the web client don't support rendering the cell-based matching of arctic coastlines. This should be possible to implement, but not done yet.|
+|goto\_fix\_1.diff|Implement client-side goto in Javascript|Bugfix on server-side goto in Freeciv web client. This patch resets the goto and AI control of the unit. This patch was created because it fixes a problem where units would suddenly get new orders assigned by the AI after a goto. |
+|orders\_aborted.diff|Implement client-side goto in Javascript|Prevent the player from getting lots of "Orders for %s aborted since they give an invalid location" error messages while server-side goto.|
+|city\_fixes.diff|Make it possible for freeciv-proxy to transfer worklist as JSON.|Removes worklist from city packet. Adds -lssl to configure requirement. Should be separate patch.|
+|goto\_fix\_2.diff|Implement client-side goto in Javascript|Fixes a bug in server-side goto.|
+|orders\_invalid2.diff|Implement client-side goto in Javascript|Prevent the player from getting lots of "Orders for %s aborted since they give an invalid location" error messages while server-side goto.|
+|citytools\_changes.diff|Obsolete patch|Obsolete patch|
+|govt-fix.diff|Add requirement\_vector support to Freeciv-proxy|Removes reqs requirement\_vector field from network protocol, because Freeciv-proxy isn't able to transfer this data-type yet.|
+|client-fixes.diff|Add support for worklist and improvement bitvectors to Freeciv-proxy|Freeciv-proxy isn't able to transfer this data yet.|
+|lake-fix.diff|Add support for lakes to webclient.|There is currently no support for lakes in the webclient|
+|savegame-support.diff|Develop a good save-game support system for the web-client|This patch adds savegame support using Amazon S3 storage, for a distributed environment|
+|current\_research\_cost.diff|Calculate current research cost in web client.|Send current research cost to client, because web client isn't able to calculate this.|
+|map\_size\_change.diff|Web client should get restricted map size|Reduces maximum map size for Freeciv web client|
+|text\_fixes.diff|Add support for HTTP links in the server messages.|Creates HTTP links in the server messages|
+|diplchanges.diff|Add support for SINT16 to Freeciv-proxy|Freeciv proxy doesn't support SINT16, so everything must be UNIT32 for now|
+|metachange.diff|Increases metaserver refresh rate|Increases metaserver refresh rate|
+|tileset\_hack.diff|Add full support for reading tileset match-style, sprite\_type and match\_indices to Freeciv web client.|This is a cludge to export some tileset matching information from the C client to Javascript code, because reading tilesets isn't supported in web client.|
+|freeciv-svn-webclient-changes.diff|Add support for compressed delta protocol to Freeciv-proxy. Make tileset .spec files compatible with Python Configparser used by /freeciv-img-extract.|Patch removed delta protocol compression, and makes it possible for freeciv-img-extract to read the Freeciv tileset .spec files. Patch also removed a data field from a network packet which isn't supported yet.|
+|metapatch1.diff|Adds meta\_topic\_string to metaserver|Adds meta\_topic\_string to metaserver|
+|turnchange.diff|Add support for integers in other formats than UINT32|Makes many integer data fields UINT32|
+|goto\_1.diff|Implement client-side goto in Javascript|This patch adds server-side goto to the patched Freeeciv server.|
+|noquitidle.diff|Make autosaving more configurable.|This patch prevents auto-saving when all players disconnect|
+|unit\_dif.diff|Web client doesn't support "?unit:Workers" unit names.|Changes ?unit:Workers in ruleset.|
+|goto\_attack1.diff|Implement client-side goto in Freeciv web client.|This patch makes a unit attack as a result of a goto.|
+|no\_rivers.diff|Add support for rendering rivers|This patch removed rivers from the map generator|
+|unithand-change2.diff|Add support for F3 shortcut in Freeciv.net web client|The Freeciv.net web client doesn't support a F3 shortcut to open players dialog|
+|goto\_change2.diff|Implement client-side goto in Javascript.|Removes excessive "The unit can't go there." error messages during gotos|
+|nosave.diff|Make auto-saving more configurable|Removes auto-saving on some events|
+|unithand\_changes.diff|Add support for naming cities to Freeciv.net web client. This is difficult because of city names encoding over JSON|Auto-name cities in Freeciv.net web client|

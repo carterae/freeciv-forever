@@ -1,0 +1,5 @@
+# Freeciv.net #
+
+## Screenshot of Freeciv.net ##
+
+[![](http://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Freeciv-net-screenshot-2010-02-14.png/800px-Freeciv-net-screenshot-2010-02-14.png)](http://www.freeciv.net)
